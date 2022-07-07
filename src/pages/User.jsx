@@ -15,6 +15,8 @@ function User() {
     useEffect(() => {
         getUser(params.login)
         getUserRepos(params.login)
+        // The below line removes warnings. Ok for small projects not big.
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const {
